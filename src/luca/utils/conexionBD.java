@@ -5,12 +5,14 @@ import java.sql.DriverManager;
 import java.sql.ResultSet;
 import java.sql.Statement;
 
+
 public class conexionBD {
 
 	public Connection  conexion() {
 
 		Connection con = null;
-		
+		Statement st= null;
+		ResultSet rs= null;
 		
 
 		try {
