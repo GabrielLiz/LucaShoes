@@ -20,7 +20,6 @@
     <link rel="stylesheet" href="assets/vendor/bootstrap/offcanvas.css">
     <!-- CSS Global Icons -->
     <link rel="stylesheet" href="assets/vendor/icon-awesome/css/font-awesome.min.css">
-    <link rel="stylesheet" href="assets/vendor/icon-line/css/simple-line-icons.css">
     <link rel="stylesheet" href="assets/vendor/icon-etlinefont/style.css">
     <link rel="stylesheet" href="assets/vendor/icon-line-pro/style.css">
     <link rel="stylesheet" href="assets/vendor/icon-hs/style.css">
@@ -31,7 +30,7 @@
     <link rel="stylesheet" href="assets/vendor/hamburgers/hamburgers.min.css">
     <link rel="stylesheet" href="assets/vendor/slick-carousel/slick/slick.css">
     <link rel="stylesheet" href="assets/vendor/fancybox/jquery.fancybox.css">
-        <link rel="stylesheet" href="../assets/vendor/chosen/chosen.css">
+    <link rel="stylesheet" href="assets/vendor/chosen/chosen.css">
     
 
 
@@ -40,7 +39,6 @@
     <link rel="stylesheet" href="assets/css/unify-core.css">
     <link rel="stylesheet" href="assets/css/unify-components.css">
     <link rel="stylesheet" href="assets/css/unify-globals.css">
-    <link rel="stylesheet" href="assets/vendor/revolution-slider/revolution/css/layers.css">
 
     <!-- CSS Unify Theme -->
     <link rel="stylesheet" href="assets/css/styles.e-commerce.css">
@@ -52,8 +50,7 @@
   
     <div id="pageheader">
       <jsp:invoke fragment="header"/>
-      
-    </div>
+      </div>
     
     <div id="body">
       <jsp:doBody/>
@@ -88,10 +85,76 @@
 
     <!-- JS Custom -->
     <script src="assets/js/custom.js"></script>
+     <script>
+        $(document).on('ready', function() {
+            // initialization of go to
+            $.HSCore.components.HSGoTo.init('.js-go-to');
+
+            // initialization of carousel
+            $.HSCore.components.HSCarousel.init('.js-carousel');
+
+            // initialization of HSDropdown component
+            $.HSCore.components.HSDropdown.init($('[data-dropdown-target]'), {
+                afterOpen: function() {
+                    $(this).find('input[type="search"]').focus();
+                }
+            });
+
+            // initialization of masonry
+            $('.masonry-grid').imagesLoaded().then(function() {
+                $('.masonry-grid').masonry({
+                    columnWidth: '.masonry-grid-sizer',
+                    itemSelector: '.masonry-grid-item',
+                    percentPosition: true
+                });
+            });
+
+            // initialization of popups
+            $.HSCore.components.HSPopup.init('.js-fancybox');
+        });
+
+        $(window).on('load', function() {
+            // initialization of header
+            $.HSCore.components.HSHeader.init($('#js-header'));
+            $.HSCore.helpers.HSHamburgers.init('.hamburger');
+        });
+
+    </script>
+    
     </div>
     
     <div id="pagefooter">
       <jsp:invoke fragment="footer"/>
+         <div class="container">
+                <div class="row">
+                    <div class="col-md-6 d-flex align-items-center g-mb-10 g-mb-0--md">
+                        <p class="w-100 g-color-gray-light-v8 mb-0">
+                            &copy; 2018 todos los derechos resevados a Equipo 5
+                            <a class="g-font-weight-700 g-color-white" href="#!">Lucatic </a>
+                        </p>
+                    </div>
+
+                    <div class="col-md-6">
+                        <ul class="list-inline float-md-right mb-0">
+                            <li class="list-inline-item g-mr-10">
+                                <a class="u-icon-v3 g-width-28 g-height-28 g-font-size-14 g-color-gray-light-v9 g-color-white--hover g-brd-gray-dark-v2 g-bg-gray-dark-v2 g-bg-primary--hover g-rounded-4 g-transition-0_2 g-transition--ease-in" href="#!"><i class="fa fa-twitter"></i></a>
+                            </li>
+                            <li class="list-inline-item g-mr-10">
+                                <a class="u-icon-v3 g-width-28 g-height-28 g-font-size-14 g-color-gray-light-v9 g-color-white--hover g-brd-gray-dark-v2 g-bg-gray-dark-v2 g-bg-primary--hover g-rounded-4 g-transition-0_2 g-transition--ease-in" href="#!"><i class="fa fa-pinterest"></i></a>
+                            </li>
+                            <li class="list-inline-item g-mr-10">
+                                <a class="u-icon-v3 g-width-28 g-height-28 g-font-size-14 g-color-gray-light-v9 g-color-white--hover g-brd-gray-dark-v2 g-bg-gray-dark-v2 g-bg-primary--hover g-rounded-4 g-transition-0_2 g-transition--ease-in" href="#!"><i class="fa fa-facebook"></i></a>
+                            </li>
+                            <li class="list-inline-item">
+                                <a class="u-icon-v3 g-width-28 g-height-28 g-font-size-14 g-color-gray-light-v9 g-color-white--hover g-brd-gray-dark-v2 g-bg-gray-dark-v2 g-bg-primary--hover g-rounded-4 g-transition-0_2 g-transition--ease-in" href="#!"><i class="fa fa-instagram"></i></a>
+                            </li>
+                            <li class="list-inline-item">
+                                <a class="u-icon-v3 g-width-28 g-height-28 g-font-size-14 g-color-gray-light-v9 g-color-white--hover g-brd-gray-dark-v2 g-bg-gray-dark-v2 g-bg-primary--hover g-rounded-4 g-transition-0_2 g-transition--ease-in" href="#!"><i class="fa fa-linkedin"></i></a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
     </div>
     
   </body>

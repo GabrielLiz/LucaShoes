@@ -8,9 +8,8 @@
 	
     <jsp:attribute name="header">
     
-    </jsp:attribute>
+    </jsp:attribute>	
     <jsp:attribute name="footer">
-      <p id="copyright">Copyright 1927, Future Bits When There Be Bits Inc.</p>
     </jsp:attribute>
     <jsp:body>
      <section class="container g-pt-100 g-pb-20">
@@ -18,18 +17,18 @@
           <div class="col-lg-5 order-lg-2 g-mb-80">
             <div class="g-brd-around g-brd-gray-light-v3 g-bg-white rounded g-px-30 g-py-50 mb-4">
               <header class="text-center mb-4">
-                <h1 class="h4 g-color-black g-font-weight-400">Create New Account</h1>
+                <h1 class="h4 g-color-black g-font-weight-400">Crear nueva cuenta</h1>
               </header>
 
               <!-- Form -->
               <form class="g-py-15">
                 <div class="row">
                   <div class="col g-mb-20">
-                    <input class="form-control g-color-black g-bg-white g-bg-white--focus g-brd-gray-light-v3 rounded g-py-15 g-px-15" type="text" placeholder="First name">
+                    <input class="form-control g-color-black g-bg-white g-bg-white--focus g-brd-gray-light-v3 rounded g-py-15 g-px-15" type="text" placeholder="Nombre">
                   </div>
 
                   <div class="col g-mb-20">
-                    <input class="form-control g-color-black g-bg-white g-bg-white--focus g-brd-gray-light-v3 rounded g-py-15 g-px-15" type="text" placeholder="Last name">
+                    <input class="form-control g-color-black g-bg-white g-bg-white--focus g-brd-gray-light-v3 rounded g-py-15 g-px-15" type="text" placeholder="Apellido">
                   </div>
                 </div>
 
@@ -39,49 +38,20 @@
                           data-open-icon="fa fa-angle-down"
                           data-close-icon="fa fa-angle-up">
                     <option></option>
-                    <option value="First Option">Male</option>
-                    <option value="Second Option">Female</option>
-                    <option value="Third Option">Other</option>
+                    <option value="First Option">Hombre</option>
+                    <option value="Second Option">Mujer</option>
                   </select>
                 </div>
 
-                <div class="row">
-                  <div class="col-sm-6 col-md-12 col-lg-6 g-mb-20">
-                    <select class="js-custom-select u-select-v1 h-100 g-brd-gray-light-v3 g-color-gray-dark-v5 rounded g-py-12" style="width: 100%;"
-                            data-placeholder="Month"
-                            data-open-icon="fa fa-angle-down"
-                            data-close-icon="fa fa-angle-up">
-                      <option></option>
-                      <option value="First Option">January</option>
-                      <option value="Second Option">February</option>
-                      <option value="Third Option">March</option>
-                      <option value="Fourth Option">April</option>
-                      <option value="Fifth Option">May</option>
-                      <option value="Sixth Option">June</option>
-                      <option value="Seventh Option">July</option>
-                      <option value="Eighth Option">August</option>
-                      <option value="Ninth Option">September</option>
-                      <option value="Tenth Option">October</option>
-                      <option value="Eleventh Option">November</option>
-                      <option value="Twelfth Option">December</option>
-                    </select>
-                  </div>
+        
 
-                  <div class="col g-mb-20">
-                    <input class="form-control g-color-black g-bg-white g-bg-white--focus g-brd-gray-light-v3 rounded g-py-15 g-px-15" type="text" placeholder="Day">
-                  </div>
 
-                  <div class="col g-mb-20">
-                    <input class="form-control g-color-black g-bg-white g-bg-white--focus g-brd-gray-light-v3 rounded g-py-15 g-px-15" type="text" placeholder="Year">
-                  </div>
+                <div class="g-mb-20">
+                  <input class="form-control g-color-black g-bg-white g-bg-white--focus g-brd-gray-light-v3 rounded g-py-15 g-px-15" type="text" placeholder="Usuario">
                 </div>
 
                 <div class="g-mb-20">
-                  <input class="form-control g-color-black g-bg-white g-bg-white--focus g-brd-gray-light-v3 rounded g-py-15 g-px-15" type="text" placeholder="Username">
-                </div>
-
-                <div class="g-mb-20">
-                  <input class="form-control g-color-black g-bg-white g-bg-white--focus g-brd-gray-light-v3 rounded g-py-15 g-px-15" type="text" placeholder="Email address">
+                  <input class="form-control g-color-black g-bg-white g-bg-white--focus g-brd-gray-light-v3 rounded g-py-15 g-px-15" type="text" placeholder="Email">
                 </div>
 
                 <div class="g-mb-20">
@@ -89,7 +59,7 @@
                 </div>
 
                 <div class="g-mb-20">
-                  <input class="form-control g-color-black g-bg-white g-bg-white--focus g-brd-gray-light-v3 rounded g-py-15 g-px-15" type="text" placeholder="Confirm password">
+                  <input class="form-control g-color-black g-bg-white g-bg-white--focus g-brd-gray-light-v3 rounded g-py-15 g-px-15" type="text" placeholder="Confirmar password">
                 </div>
 
                 <div class="mb-1">
@@ -98,7 +68,7 @@
                     <span class="d-block u-check-icon-checkbox-v6 g-absolute-centered--y g-left-0">
                       <i class="fa" data-check-icon="&#xf00c"></i>
                     </span>
-                    I accept the <a href="#!">Terms and Conditions</a>
+                    Acepto <a href="#!"> Terminos y condiciones</a>
                   </label>
                 </div>
 
@@ -118,7 +88,7 @@
             </div>
 
             <div class="text-center">
-              <p class="g-color-gray-dark-v5 mb-0">Already have an account?
+              <p class="g-color-gray-dark-v5 mb-0">Ya tienes cuenta?
                 <a class="g-font-weight-600" href="page-login-1.html">signin</a></p>
             </div>
           </div>
@@ -126,17 +96,19 @@
           <div class="col-lg-7 order-lg-1 g-mb-80">
             <div class="g-pr-20--lg">
               <div class="mb-5">
-                <h2 class="h1 g-font-weight-400 mb-3">Welcome to Unify</h2>
-                <p class="g-color-gray-dark-v4">The time has come to bring those ideas and plans to life. This is where we really begin to visualize your napkin sketches and make them into beautiful pixels.</p>
+                <h2 class="h1 g-font-weight-400 mb-3">Bienvenido  a LucaShoes</h2>
+                <p class="g-color-gray-dark-v4">
+Las zapatillas de Russ cuentan con el icónico
+tratamiento en rojo y negro que forma parte del ADN de Jordan.</p>
               </div>
 
               <div class="row text-center mb-5">
                 <div class="col-sm-4 g-mb-10">
                   <!-- Counters -->
                   <div class="g-bg-gray-light-v5 g-pa-20">
-                    <div class="js-counter g-color-gray-dark-v5 g-font-weight-300 g-font-size-25 g-line-height-1">52147</div>
+                    <div class="js-counter g-color-gray-dark-v5 g-font-weight-300 g-font-size-25 g-line-height-1">235</div>
                     <div class="d-inline-block g-width-10 g-height-2 g-bg-gray-dark-v5 mb-1"></div>
-                    <h4 class="g-color-gray-dark-v4 g-font-size-12 text-uppercase">Code Lines</h4>
+                    <h4 class="g-color-gray-dark-v4 g-font-size-12 text-uppercase">Nuestras tiendas</h4>
                   </div>
                   <!-- End Counters -->
                 </div>
@@ -146,7 +118,7 @@
                   <div class="g-bg-gray-light-v5 g-pa-20">
                     <div class="js-counter g-color-gray-dark-v5 g-font-weight-300 g-font-size-25 g-line-height-1">24583</div>
                     <div class="d-inline-block g-width-10 g-height-2 g-bg-gray-dark-v5 mb-1"></div>
-                    <h4 class="g-color-gray-dark-v4 g-font-size-12 text-uppercase">Projects</h4>
+                    <h4 class="g-color-gray-dark-v4 g-font-size-12 text-uppercase">Zapatillas en catalogo</h4>
                   </div>
                   <!-- End Counters -->
                 </div>
@@ -156,16 +128,16 @@
                   <div class="g-bg-gray-light-v5 g-pa-20">
                     <div class="js-counter g-color-gray-dark-v5 g-font-weight-300 g-font-size-25 g-line-height-1">7348</div>
                     <div class="d-inline-block g-width-10 g-height-2 g-bg-gray-dark-v5 mb-1"></div>
-                    <h4 class="g-color-gray-dark-v4 g-font-size-12 text-uppercase">Working Hours</h4>
+                    <h4 class="g-color-gray-dark-v4 g-font-size-12 text-uppercase">Clientes satisfechos</h4>
                   </div>
                   <!-- End Counters -->
                 </div>
               </div>
 
               <div class="text-center">
-                <h2 class="h4 g-font-weight-400 mb-4">Join more than
-                  <span class="g-color-primary">33,000</span> members worldwide</h2>
-                <img class="img-fluid g-opacity-0_6" src="assets/img/maps/map.png" alt="Image Description">
+                <h2 class="h4 g-font-weight-400 mb-4">Registrate y gana una entrada a las finales de playoff de la NBA
+                  <span class="g-color-primary">En el Garden</span> NYC</h2>
+                <img class="img-fluid" src="assets/img/garden.jpg" alt="Image Description">
               </div>
             </div>
           </div>
