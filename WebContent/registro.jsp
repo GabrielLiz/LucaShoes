@@ -21,14 +21,14 @@
               </header>
 
               <!-- Form -->
-              <form class="g-py-15">
+              <form class="g-py-15" action="registro.do" method="POST">
                 <div class="row">
                   <div class="col g-mb-20">
-                    <input class="form-control g-color-black g-bg-white g-bg-white--focus g-brd-gray-light-v3 rounded g-py-15 g-px-15" type="text" placeholder="Nombre">
+                    <input class="form-control g-color-black g-bg-white g-bg-white--focus g-brd-gray-light-v3 rounded g-py-15 g-px-15" type="text" id="nombre" placeholder="Nombre">
                   </div>
 
                   <div class="col g-mb-20">
-                    <input class="form-control g-color-black g-bg-white g-bg-white--focus g-brd-gray-light-v3 rounded g-py-15 g-px-15" type="text" placeholder="Apellido">
+                    <input class="form-control g-color-black g-bg-white g-bg-white--focus g-brd-gray-light-v3 rounded g-py-15 g-px-15" type="text" id="apellido" placeholder="Apellido">
                   </div>
                 </div>
 
@@ -47,19 +47,19 @@
 
 
                 <div class="g-mb-20">
-                  <input class="form-control g-color-black g-bg-white g-bg-white--focus g-brd-gray-light-v3 rounded g-py-15 g-px-15" type="text" placeholder="Usuario">
+                  <input class="form-control g-color-black g-bg-white g-bg-white--focus g-brd-gray-light-v3 rounded g-py-15 g-px-15" type="text" id="usuario" placeholder="Usuario">
                 </div>
 
                 <div class="g-mb-20">
-                  <input class="form-control g-color-black g-bg-white g-bg-white--focus g-brd-gray-light-v3 rounded g-py-15 g-px-15" type="text" placeholder="Email">
+                  <input class="form-control g-color-black g-bg-white g-bg-white--focus g-brd-gray-light-v3 rounded g-py-15 g-px-15" type="text" id="email" placeholder="Email">
                 </div>
 
                 <div class="g-mb-20">
-                  <input class="form-control g-color-black g-bg-white g-bg-white--focus g-brd-gray-light-v3 rounded g-py-15 g-px-15" type="text" placeholder="Password">
+                  <input class="form-control g-color-black g-bg-white g-bg-white--focus g-brd-gray-light-v3 rounded g-py-15 g-px-15" type="password" id="password" placeholder="Password">
                 </div>
 
                 <div class="g-mb-20">
-                  <input class="form-control g-color-black g-bg-white g-bg-white--focus g-brd-gray-light-v3 rounded g-py-15 g-px-15" type="text" placeholder="Confirmar password">
+                  <input class="form-control g-color-black g-bg-white g-bg-white--focus g-brd-gray-light-v3 rounded g-py-15 g-px-15" type="password" id="password" placeholder="Confirmar password">
                 </div>
 
                 <div class="mb-1">
@@ -98,8 +98,7 @@
               <div class="mb-5">
                 <h2 class="h1 g-font-weight-400 mb-3">Bienvenido  a LucaShoes</h2>
                 <p class="g-color-gray-dark-v4">
-Las zapatillas de Russ cuentan con el icónico
-tratamiento en rojo y negro que forma parte del ADN de Jordan.</p>
+					Las zapatillas de Russ cuentan con el icónico tratamiento en rojo y negro que forma parte del ADN de Jordan.</p>
               </div>
 
               <div class="row text-center mb-5">
