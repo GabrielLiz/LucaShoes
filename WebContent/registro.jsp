@@ -38,8 +38,8 @@
                           data-open-icon="fa fa-angle-down"
                           data-close-icon="fa fa-angle-up" id="sexo">
                     <option></option>
-                    <option value="First Option">Hombre</option>
-                    <option value="Second Option">Mujer</option>
+                    <option value="H">Hombre</option>
+                    <option value="M">Mujer</option>
                   </select>
                 </div>
 
