@@ -1,7 +1,7 @@
-package servicios;
+package luca.servicios;
 
-import modelo.Usuario;
-import datos.AltaUsuario;
+import luca.datos.AltaUsuario;
+import luca.modelo.Usuario;
 
 public class GestionUsuario {
 

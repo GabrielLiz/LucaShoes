@@ -1,4 +1,4 @@
-package modelo;
+package luca.modelo;
 
 public class Usuario {
 	public String usuario;

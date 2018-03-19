@@ -1,8 +1,20 @@
-package datos;
+package luca.datos;
 
-import modelo.Usuario;
+import java.sql.Connection;
+
+import luca.modelo.Usuario;
+import luca.utils.conexionBD;
+
+
+
 
 public class AltaUsuario {
+	
+	 
+	
+	conexionBD conect= new conexionBD();
+	
+	
 	public AltaUsuario(){
 		
 	}
