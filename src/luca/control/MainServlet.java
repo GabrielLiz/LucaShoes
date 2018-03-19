@@ -21,7 +21,7 @@ public class MainServlet extends HttpServlet {
 		String nombre = request.getParameter("nombre");
 		String password = request.getParameter("password");
 		String email = request.getParameter("email");
-		char sex = request.getParameter("sex").toString().charAt(0);
+		char sex = request.getParameter("sexo").toString().charAt(0);
 		
 		GestionUsuario be = new GestionUsuario(usuario,nombre,password,email,sex);
 		
