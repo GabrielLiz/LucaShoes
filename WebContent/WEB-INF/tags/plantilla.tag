@@ -33,8 +33,6 @@
     <link rel="stylesheet" href="assets/vendor/chosen/chosen.css">
     
 
-
-
     <!-- CSS Unify -->
     <link rel="stylesheet" href="assets/css/unify-core.css">
     <link rel="stylesheet" href="assets/css/unify-components.css">
