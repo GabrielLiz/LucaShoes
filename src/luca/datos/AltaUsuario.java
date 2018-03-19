@@ -1,16 +1,17 @@
 package luca.datos;
 
-import java.sql.Connection;
-
+import luca.utils.*;
+import luca.servicios.*;
 import luca.modelo.Usuario;
 import luca.utils.conexionBD;
 
-
+import java.sql.Connection;
+import java.sql.Statement;
 
 
 public class AltaUsuario {
 	
-	 
+	
 	
 	conexionBD conect= new conexionBD();
 	
@@ -19,6 +20,9 @@ public class AltaUsuario {
 		
 	}
 	public AltaUsuario(Usuario user){
-		System.out.println("Alta a "+user.getNombre());
+	
+		
 	}	
+	
+	
 }
