@@ -40,47 +40,22 @@
                   </a>
                 </li>
               </ul>
-            </div>
-
-            <div class="col-auto">
-              <i class="fa fa-phone g-font-size-18 g-valign-middle g-color-primary g-mr-10 g-mt-minus-2"></i>
-              8 800 1234 4321
-            </div>
+            </div>            
 
             <div class="col-auto">
               <i class="fa fa-clock-o g-font-size-18 g-valign-middle g-color-primary g-mr-10 g-mt-minus-2"></i>
-              Mon-Fri: 9 AM - 5 PM
+              Lunes - Viernes: 09:00 - 20:00
             </div>
 
             <div class="col-auto g-pos-rel">
-              <ul class="list-inline g-overflow-hidden g-pt-1 g-mx-minus-4 mb-0">
-                <li class="list-inline-item g-mx-4">
-                  <i class="icon-globe-alt g-font-size-18 g-valign-middle g-color-primary g-pos-rel g-top-minus-2 g-mr-10"></i>
-                  <a href="#!" id="languages-dropdown-invoker-2" class="g-color-white g-color-primary--hover g-text-underline--none--hover" aria-controls="languages-dropdown-2" aria-haspopup="true" aria-expanded="false" data-dropdown-event="click" data-dropdown-target="#languages-dropdown-2"
-                  data-dropdown-type="css-animation" data-dropdown-duration="300" data-dropdown-hide-on-scroll="false" data-dropdown-animation-in="fadeIn" data-dropdown-animation-out="fadeOut">English
-              </a>
-                  <ul id="languages-dropdown-2" class="list-unstyled g-pos-abs g-left-0 g-bg-black g-width-160 g-pb-5 g-mt-10" aria-labelledby="languages-dropdown-invoker-2">
-                    <li>
-                      <a class="d-block g-color-white g-color-primary--hover g-text-underline--none--hover g-py-5 g-px-20" href="#!">English</a>
-                    </li>
-                    <li>
-                      <a class="d-block g-color-white g-color-primary--hover g-text-underline--none--hover g-py-5 g-px-20" href="#!">Spanish</a>
-                    </li>
-                    <li>
-                      <a class="d-block g-color-white g-color-primary--hover g-text-underline--none--hover g-py-5 g-px-20" href="#!">Russian</a>
-                    </li>
-                    <li>
-                      <a class="d-block g-color-white g-color-primary--hover g-text-underline--none--hover g-py-5 g-px-20" href="#!">German</a>
-                    </li>
-                  </ul>
-                </li>
-                <li class="list-inline-item g-mx-4">|</li>
+              <ul class="list-inline g-overflow-hidden g-pt-1 g-mx-minus-4 mb-0">               
+                
                 <li class="list-inline-item g-mx-4">
                   <a class="g-color-white g-color-primary--hover g-text-underline--none--hover" href="#!">FAQ</a>
                 </li>
                 <li class="list-inline-item g-mx-4">|</li>
                 <li class="list-inline-item g-mx-4">
-                  <a class="g-color-white g-color-primary--hover g-text-underline--none--hover" href="#!">Login</a>
+                  <a class="g-color-white g-color-primary--hover g-text-underline--none--hover" href="#!">IDENTIFÍCATE</a>
                 </li>
               </ul>
             </div>
@@ -139,42 +114,32 @@
 
             <!-- Logo -->
             <a href="index.jsp" class="navbar-brand">
-              <img src="assets/img/logo/logo-1.png" alt="Image Description">
+              <img src="assets/img/logo.png" alt="Image Description">
             </a>
             <!-- End Logo -->
 
             <!-- Navigation -->
             <div class="collapse navbar-collapse align-items-center flex-sm-row g-pt-10 g-pt-5--lg" id="navBar">
               <ul class="navbar-nav text-uppercase g-font-weight-600 ml-auto">
-                <li class="nav-item g-mx-20--lg">
-                  <a href="#!" class="nav-link px-0">Home
-                
-              </a>
-                </li>
-                <li class="nav-item g-mx-20--lg">
-                  <a href="#!" class="nav-link px-0">Features
-                
-              </a>
-                </li>
                 <li class="nav-item g-mx-20--lg active">
-                  <a href="#!" class="nav-link px-0">Shortcodes
-                <span class="sr-only">(current)</span>
-              </a>
-                </li>
-                <li class="nav-item g-mx-20--lg">
-                  <a href="#!" class="nav-link px-0">Pages
+                  <a href="#!" class="nav-link px-0">Inicio                 
                 
               </a>
                 </li>
                 <li class="nav-item g-mx-20--lg">
-                  <a href="#!" class="nav-link px-0">Demos
+                  <a href="#!" class="nav-link px-0">Catálogo
                 
               </a>
                 </li>
-                <li class="nav-item g-ml-20--lg g-mr-0--lg">
-                  <a href="#!" class="nav-link px-0">What's New
+                <li class="nav-item g-mx-20--lg">
+                  <a href="#!" class="nav-link px-0">Las más vendidas
                 
               </a>
+                </li>
+                <li class="nav-item g-mx-20--lg">
+                  <a href="#!" class="nav-link px-0">Contácto      
+                       
+                  </a>
                 </li>
               </ul>
             </div>
