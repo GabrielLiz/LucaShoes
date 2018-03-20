@@ -9,10 +9,10 @@ import java.sql.Statement;
 import luca.modelo.Usuario;
 
 
-public class AltaUsuario implements IDatos{
+public class GestionUsuarios implements IDatos{
 	
 	
-	public AltaUsuario() {
+	public GestionUsuarios() {
 		super();
 
 	}
@@ -26,6 +26,8 @@ public class AltaUsuario implements IDatos{
 		ResultSet rs = null;
 		System.out.println("--- en metodo addUsuarios");
 		try{
+			
+			
 			String driverClassName = "com.mysql.jdbc.Driver";
 			String driverUrl = "jdbc:mysql://192.168.200.22/proyecto?useSSL=false";
 			String user = "proyecto";
@@ -50,6 +52,7 @@ public class AltaUsuario implements IDatos{
 			}
 		catch(Exception e){
 			System.out.println(e.getMessage());		
+		
 		}
 		
 		
@@ -57,8 +60,49 @@ public class AltaUsuario implements IDatos{
 		
 	}	
 	
-	public void añadirUsuarioDatos(Usuario us) {
+	public boolean darDeBaja(Usuario us) {
 		
+		
+		
+		
+		
+		
+		Connection con = null;
+		Statement st = null;
+		ResultSet rs = null;
+		System.out.println("--- en metodo addUsuarios");
+		try{
+			
+			
+			String driverClassName = "com.mysql.jdbc.Driver";
+			String driverUrl = "jdbc:mysql://192.168.200.22/proyecto?useSSL=false";
+			String user = "proyecto";
+			String password = "1234";
+			Class.forName(driverClassName);
+			con = DriverManager.getConnection(driverUrl, user, password);
+
+			st = con.createStatement();
+			System.out.println("HOLAAA");
+			String query = "DELETE FROM proyecto.usuario WHERE usuario='"+us.getUsuario()+" ';";
+					
+			int val = st.executeUpdate(query);
+			System.out.println("--col afectadas: "+val);
+			con.close();
+			return true;
+
+		}catch(SQLException e){ 
+			System.out.println(e.getMessage());
+			}
+		catch(ClassNotFoundException e){ 
+			System.out.println(e.getMessage());
+			}
+		catch(Exception e){
+			System.out.println(e.getMessage());		
+		
+		}
+		
+		
+		return false;
 
 	}
 	
