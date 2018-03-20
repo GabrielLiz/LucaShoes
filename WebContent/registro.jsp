@@ -21,10 +21,10 @@
               </header>
 
               <!-- Form -->
-              <form class="g-py-15" action="registro.do" method="POST">
+              <form class="g-py-15" action="registro" method="POST">
                 <div class="row">
                   <div class="col g-mb-20">
-                    <input class="form-control g-color-black g-bg-white g-bg-white--focus g-brd-gray-light-v3 rounded g-py-15 g-px-15" type="text" id="nombre" placeholder="Nombre">
+                    <input class="form-control g-color-black g-bg-white g-bg-white--focus g-brd-gray-light-v3 rounded g-py-15 g-px-15" type="text" name="nombre" placeholder="Nombre">
                   </div>
 
                   <div class="col g-mb-20">
@@ -58,9 +58,6 @@
                   <input class="form-control g-color-black g-bg-white g-bg-white--focus g-brd-gray-light-v3 rounded g-py-15 g-px-15" type="password" id="password" placeholder="Password">
                 </div>
 
-                <div class="g-mb-20">
-                  <input class="form-control g-color-black g-bg-white g-bg-white--focus g-brd-gray-light-v3 rounded g-py-15 g-px-15" type="password" id="password" placeholder="Confirmar password">
-                </div>
 
                 <div class="mb-1">
                   <label class="form-check-inline u-check g-color-gray-dark-v5 g-font-size-13 g-pl-25 mb-2">
@@ -82,7 +79,7 @@
                   </label>
                 </div>
 
-                <button class="btn btn-block u-btn-primary g-font-size-12 text-uppercase g-py-12 g-px-25" type="button">Signup</button>
+                <button class="btn btn-block u-btn-primary g-font-size-12 text-uppercase g-py-12 g-px-25" type="submit">Signup</button>
               </form>
               <!-- End Form -->
             </div>
@@ -142,5 +139,6 @@
           </div>
         </div>
       </section>
+      
     </jsp:body>
 </t:plantilla>

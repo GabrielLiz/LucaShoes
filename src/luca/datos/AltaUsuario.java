@@ -9,18 +9,18 @@ import java.sql.Connection;
 import java.sql.Statement;
 
 
-public class AltaUsuario {
+public class AltaUsuario implements IDatos{
 	
-	
-	
-	conexionBD conect= new conexionBD();
-	
-	
-	public AltaUsuario(){
-		
+	public AltaUsuario() {
+		super();
+
 	}
-	public AltaUsuario(Usuario user){
-	
+
+
+	@Override
+	public boolean register(Usuario user) {
+		
+		return false;
 		
 	}	
 	

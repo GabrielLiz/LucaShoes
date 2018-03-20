@@ -185,6 +185,6 @@
     </header>
     <!-- End Header -->
 	</jsp:attribute>
-
-
+    <jsp:body>
+</jsp:body>  
 </t:plantilla>
