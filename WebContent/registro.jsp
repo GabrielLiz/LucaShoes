@@ -65,7 +65,7 @@
                     <span class="d-block u-check-icon-checkbox-v6 g-absolute-centered--y g-left-0">
                       <i class="fa" data-check-icon="&#xf00c"></i>
                     </span>
-                    Acepto <a href="#!"> Terminos y condiciones</a>
+                    Acepto <a href="#!"> Términos y condiciones</a>
                   </label>
                 </div>
 
