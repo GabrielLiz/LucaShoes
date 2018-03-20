@@ -8,6 +8,7 @@ import javax.servlet.http.HttpServlet;
 import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
 
+import luca.datos.AltaUsuario;
 import luca.modelo.Usuario;
 
 /**
@@ -16,46 +17,54 @@ import luca.modelo.Usuario;
 @WebServlet("/registro")
 public class UsuariosServlet extends HttpServlet {
 	private static final long serialVersionUID = 1L;
-      
-	
-	///Constantes
-	public static final String USUARIO="usuario";
-	public static final String NOMBRE="nombre";
-	public static final String EMAIL="email";
-	public static final String PASSWORD="password";
 
-	
-    /**
-     * @see HttpServlet#HttpServlet()
-     */
+	/// Constantes
+	public static final String USUARIO = "usuario";
+	public static final String NOMBRE = "nombre";
+	public static final String EMAIL = "email";
+	public static final String PASSWORD = "password";
+
 	/**
-	 * @see HttpServlet#doGet(HttpServletRequest request, HttpServletResponse response)
+	 * @see HttpServlet#HttpServlet()
 	 */
-	protected void doGet(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
+	/**
+	 * @see HttpServlet#doGet(HttpServletRequest request, HttpServletResponse
+	 *      response)
+	 */
+	protected void doGet(HttpServletRequest request, HttpServletResponse response)
+			throws ServletException, IOException {
 
 		processRequest(request, response);
-	}	
+	}
 
 	/**
-	 * @see HttpServlet#doPost(HttpServletRequest request, HttpServletResponse response)
+	 * @see HttpServlet#doPost(HttpServletRequest request, HttpServletResponse
+	 *      response)
 	 */
-	protected void doPost(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
+	protected void doPost(HttpServletRequest request, HttpServletResponse response)
+			throws ServletException, IOException {
 		// TODO Auto-generated method stub
 		processRequest(request, response);
 	}
-	
+
 	protected void processRequest(HttpServletRequest request, HttpServletResponse response)
 			throws ServletException, IOException {
-		Usuario user= new Usuario();
-		
+		Usuario user = new Usuario();
+
 		user.setUsuario(request.getParameter(USUARIO));
 		user.setNombre(request.getParameter(NOMBRE));
 		user.setEmail(request.getParameter(EMAIL));
 		user.setEmail(request.getParameter(PASSWORD));
+		AltaUsuario alta= new AltaUsuario();
 		
-		
+		if(alta.register(user)) {
 		response.sendRedirect("/LucaShoes/index.jsp");
-		
+		}else {
+			
+			response.sendRedirect("/LucaShoes/registro.jsp");
+
+		}
 	}
+
 
 }

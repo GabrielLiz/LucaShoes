@@ -6,10 +6,13 @@
 	   <title>Lucashoes | Inicio</title>
 	   
 	</jsp:attribute>
-	<jsp:attribute name="header">
+ <jsp:attribute name="header">
     
+    </jsp:attribute>	
+    <jsp:attribute name="footer">
     </jsp:attribute>
-	 
+    
+<jsp:body>	 
       <div class="u-header__section u-header__section--light g-bg-white-opacity-0_8 g-py-10" data-header-fix-moment-exclude="g-bg-white-opacity-0_8 g-py-10" data-header-fix-moment-classes="g-bg-white u-shadow-v18 g-py-0">
         <nav class="navbar navbar-expand-lg">
           <div class="container">
@@ -61,6 +64,5 @@
     </header>
     <!-- End Header -->
 	
-    <jsp:body>
 </jsp:body>  
 </t:plantilla>

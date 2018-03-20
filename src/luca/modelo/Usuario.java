@@ -3,6 +3,13 @@ package luca.modelo;
 public class Usuario {
 	public String usuario;
 	public String nombre;
+	public String apellido;
+	public String getApellido() {
+		return apellido;
+	}
+	public void setApellido(String apellido) {
+		this.apellido = apellido;
+	}
 	public String password;
 	public String email;
 	public char sex;

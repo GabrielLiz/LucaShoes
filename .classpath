@@ -13,6 +13,5 @@
 			<attribute name="owner.project.facets" value="java"/>
 		</attributes>
 	</classpathentry>
-	<classpathentry kind="lib" path="lib/taglibs-standard-impl-1.2.5.jar"/>
 	<classpathentry kind="output" path="build/classes"/>
 </classpath>
