@@ -85,8 +85,8 @@
             </div>
 
             <div class="text-center">
-              <p class="g-color-gray-dark-v5 mb-0">Ya tienes cuenta?
-                <a class="g-font-weight-600" href="page-login-1.html">signin</a></p>
+              <p class="g-color-gray-dark-v5 mb-0">¿Ya tienes cuenta?
+                <a class="g-font-weight-600" href="page-login-1.html">Identifícate</a></p>
             </div>
           </div>
 

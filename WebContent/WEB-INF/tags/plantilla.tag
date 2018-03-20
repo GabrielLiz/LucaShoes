@@ -52,33 +52,10 @@
         <div class="container">
           <div class="row flex-column flex-sm-row justify-content-between align-items-center text-uppercase g-font-weight-600 g-color-white g-font-size-12 g-mx-0--lg">
             <div class="col-auto">
-              <ul class="list-inline mb-0">
-                <li class="list-inline-item">
-                  <a href="#!" class="g-color-white g-color-primary--hover g-pa-3">
-                    <i class="fa fa-facebook"></i>
-                  </a>
+              <ul class="list-inline g-overflow-hidden g-pt-1 g-mx-minus-4 mb-0">
+                 <li class="list-inline-item g-mx-4">
+                  <a class="g-color-white g-color-primary--hover g-text-underline--none--hover" href="index.jsp">INICIO</a>
                 </li>
-                <li class="list-inline-item">
-                  <a href="#!" class="g-color-white g-color-primary--hover g-pa-3">
-                    <i class="fa fa-twitter"></i>
-                  </a>
-                </li>
-                <li class="list-inline-item">
-                  <a href="#!" class="g-color-white g-color-primary--hover g-pa-3">
-                    <i class="fa fa-tumblr"></i>
-                  </a>
-                </li>
-                <li class="list-inline-item">
-                  <a href="#!" class="g-color-white g-color-primary--hover g-pa-3">
-                    <i class="fa fa-pinterest-p"></i>
-                  </a>
-                </li>
-                <li class="list-inline-item">
-                  <a href="#!" class="g-color-white g-color-primary--hover g-pa-3">
-                    <i class="fa fa-google"></i>
-                  </a>
-                </li>
-              </ul>
             </div>            
 
             <div class="col-auto">
