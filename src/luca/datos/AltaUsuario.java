@@ -36,7 +36,7 @@ public class AltaUsuario implements IDatos{
 			st = con.createStatement();
 			System.out.println("HOLAAA");
 			String query = "INSERT INTO proyecto.usuario (usuario, nombre, password, email, sex) VALUES ('"+us.getUsuario() +"',"
-					+ " '"+us.getNombre()+" "+us.getApellido() +"', '"+us.getPassword() +"', '"+us.getEmail() +"', 'M');";
+					+ " '"+us.getNombre()+" "+us.getApellido() +"', '"+us.getPassword() +"', '"+us.getEmail() +"', '"+us.getGenero()+"');";
 			int val = st.executeUpdate(query);
 			System.out.println("--col afectadas: "+val);
 			con.close();

@@ -21,8 +21,10 @@ public class UsuariosServlet extends HttpServlet {
 	/// Constantes
 	public static final String USUARIO = "usuario";
 	public static final String NOMBRE = "nombre";
+	public static final String APELLIDO = "apellido";
 	public static final String EMAIL = "email";
 	public static final String PASSWORD = "password";
+	public static final String GENERO = "sexo";
 
 	/**
 	 * @see HttpServlet#HttpServlet()
@@ -50,17 +52,19 @@ public class UsuariosServlet extends HttpServlet {
 	protected void processRequest(HttpServletRequest request, HttpServletResponse response)
 			throws ServletException, IOException {
 		Usuario user = new Usuario();
+		System.out.println(request.getParameter(GENERO));
 
 		user.setUsuario(request.getParameter(USUARIO));
 		user.setNombre(request.getParameter(NOMBRE));
+		user.setApellido(request.getParameter(APELLIDO));
 		user.setEmail(request.getParameter(EMAIL));
-		user.setEmail(request.getParameter(PASSWORD));
+		user.setPassword(request.getParameter(PASSWORD));
+		user.setGenero(request.getParameter(GENERO));
 		AltaUsuario alta= new AltaUsuario();
 		
 		if(alta.register(user)) {
 		response.sendRedirect("/LucaShoes/index.jsp");
 		}else {
-			
 			response.sendRedirect("/LucaShoes/registro.jsp");
 
 		}

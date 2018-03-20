@@ -36,8 +36,7 @@
                   <select class="js-custom-select u-select-v1 g-brd-gray-light-v3 g-color-gray-dark-v5 rounded g-py-12" style="width: 100%;"
                           data-placeholder="Gender"
                           data-open-icon="fa fa-angle-down"
-                          data-close-icon="fa fa-angle-up" id="sexo">
-                    <option></option>
+                          data-close-icon="fa fa-angle-up" name="sexo">
                     <option value="H" selected="true">Hombre</option>
                     <option value="M">Mujer</option>
                   </select>
