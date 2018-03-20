@@ -56,6 +56,7 @@
                  <li class="list-inline-item g-mx-4">
                   <a class="g-color-white g-color-primary--hover g-text-underline--none--hover" href="index.jsp">INICIO</a>
                 </li>
+                </ul>
             </div>            
 
             <div class="col-auto">
