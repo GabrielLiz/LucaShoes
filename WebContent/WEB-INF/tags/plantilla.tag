@@ -82,6 +82,10 @@
                 <li class="list-inline-item g-mx-4">
                   <a class="g-color-white g-color-primary--hover g-text-underline--none--hover" href="bajaCliente.jsp">BAJA</a>
                 </li>
+                 <li class="list-inline-item g-mx-4">|</li>
+                <li class="list-inline-item g-mx-4">
+                  <a class="g-color-white g-color-primary--hover g-text-underline--none--hover" href="modificar.jsp">MODIFICAR</a>
+                </li>
               </ul>
             </div>
 
