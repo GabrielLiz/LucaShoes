@@ -61,6 +61,13 @@ public class AltaUsuario implements IDatos{
 		
 
 	}
+
+
+	@Override
+	public boolean darDeBaja(Usuario user) {
+		// TODO Auto-generated method stub
+		return false;
+	}
 	
 	
 }

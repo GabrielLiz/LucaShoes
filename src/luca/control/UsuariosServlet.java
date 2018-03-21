@@ -8,6 +8,7 @@ import javax.servlet.http.HttpServlet;
 import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
 
+import luca.datos.AltaUsuario;
 import luca.datos.GestionUsuarios;
 import luca.modelo.Usuario;
 
@@ -58,14 +59,11 @@ public class UsuariosServlet extends HttpServlet {
 		user.setNombre(request.getParameter(NOMBRE));
 		user.setApellido(request.getParameter(APELLIDO));
 		user.setEmail(request.getParameter(EMAIL));
-<<<<<<< HEAD
 		user.setEmail(request.getParameter(PASSWORD));
-		GestionUsuarios alta= new GestionUsuarios();
-=======
+		GestionUsuarios altas= new GestionUsuarios();
 		user.setPassword(request.getParameter(PASSWORD));
 		user.setGenero(request.getParameter(GENERO));
 		AltaUsuario alta= new AltaUsuario();
->>>>>>> refs/remotes/origin/master
 		
 		if(alta.register(user)) {
 		response.sendRedirect("/LucaShoes/index.jsp");
