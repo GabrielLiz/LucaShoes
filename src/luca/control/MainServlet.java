@@ -7,12 +7,12 @@ import javax.servlet.http.HttpServlet;
 import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
 
-import luca.servicios.GestionUsuario;
+
 
 
 @WebServlet
 (name = "MainServlet", 
-urlPatterns = { "/baja" }, 
+urlPatterns = { "/asdasd" }, 
 asyncSupported = false)
 public class MainServlet extends HttpServlet {
 	
