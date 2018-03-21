@@ -3,7 +3,7 @@
 
 <t:plantilla>
 	<jsp:attribute name="head">
-	   <title>Lucashoes | Registro</title>
+	   <title>Lucashoes | Modificar</title>
 	</jsp:attribute>
 	
     <jsp:attribute name="header">
