@@ -36,14 +36,11 @@
                   <select class="js-custom-select u-select-v1 g-brd-gray-light-v3 g-color-gray-dark-v5 rounded g-py-12" style="width: 100%;"
                           data-placeholder="Gender"
                           data-open-icon="fa fa-angle-down"
-                          data-close-icon="fa fa-angle-up" id="sexo">
-                    <option></option>
-                    <option value="H">Hombre</option>
+                          data-close-icon="fa fa-angle-up" name="sexo">
+                    <option value="H" selected="true">Hombre</option>
                     <option value="M">Mujer</option>
                   </select>
-                </div>
-
-        
+                </div>     
 
 
                 <div class="g-mb-20">
@@ -65,21 +62,12 @@
                     <span class="d-block u-check-icon-checkbox-v6 g-absolute-centered--y g-left-0">
                       <i class="fa" data-check-icon="&#xf00c"></i>
                     </span>
-                    Acepto <a href="#!"> Términos y condiciones</a>
+                    Acepto los <a href="https://www.forocoches.com/index.php?p=normas">&nbsp;términos y condiciones</a>
                   </label>
                 </div>
 
-                <div class="mb-3">
-                  <label class="form-check-inline u-check g-color-gray-dark-v5 g-font-size-13 g-pl-25 mb-2">
-                    <input class="g-hidden-xs-up g-pos-abs g-top-0 g-left-0" type="checkbox">
-                    <span class="d-block u-check-icon-checkbox-v6 g-absolute-centered--y g-left-0">
-                      <i class="fa" data-check-icon="&#xf00c"></i>
-                    </span>
-                    Subscribe to our newsletter
-                  </label>
-                </div>
 
-                <button class="btn btn-block u-btn-primary g-font-size-12 text-uppercase g-py-12 g-px-25" type="submit">Signup</button>
+                <button class="btn btn-block u-btn-primary g-font-size-12 text-uppercase g-py-12 g-px-25" type="submit">Registro</button>
               </form>
               <!-- End Form -->
             </div>
@@ -93,26 +81,18 @@
           <div class="col-lg-7 order-lg-1 g-mb-80">
             <div class="g-pr-20--lg">
               <div class="mb-5">
-                <h2 class="h1 g-font-weight-400 mb-3">Bienvenido  a LucaShoes</h2>
+                <h2 class="h1 g-font-weight-400 mb-3">Registro LucaShoes</h2>
                 <p class="g-color-gray-dark-v4">
-					Las zapatillas de Russ cuentan con el icónico tratamiento en rojo y negro que forma parte del ADN de Jordan.</p>
+					El registro en la web es fundamental para poder realizar compras</p>
               </div>
 
               <div class="row text-center mb-5">
-                <div class="col-sm-4 g-mb-10">
-                  <!-- Counters -->
-                  <div class="g-bg-gray-light-v5 g-pa-20">
-                    <div class="js-counter g-color-gray-dark-v5 g-font-weight-300 g-font-size-25 g-line-height-1">235</div>
-                    <div class="d-inline-block g-width-10 g-height-2 g-bg-gray-dark-v5 mb-1"></div>
-                    <h4 class="g-color-gray-dark-v4 g-font-size-12 text-uppercase">Nuestras tiendas</h4>
-                  </div>
-                  <!-- End Counters -->
-                </div>
+              
 
                 <div class="col-sm-4 g-mb-10">
                   <!-- Counters -->
                   <div class="g-bg-gray-light-v5 g-pa-20">
-                    <div class="js-counter g-color-gray-dark-v5 g-font-weight-300 g-font-size-25 g-line-height-1">24583</div>
+                    <div class="js-counter g-color-gray-dark-v5 g-font-weight-300 g-font-size-25 g-line-height-1">Pedir info a la BBDD</div>
                     <div class="d-inline-block g-width-10 g-height-2 g-bg-gray-dark-v5 mb-1"></div>
                     <h4 class="g-color-gray-dark-v4 g-font-size-12 text-uppercase">Zapatillas en catalogo</h4>
                   </div>
@@ -122,7 +102,7 @@
                 <div class="col-sm-4 g-mb-10">
                   <!-- Counters -->
                   <div class="g-bg-gray-light-v5 g-pa-20">
-                    <div class="js-counter g-color-gray-dark-v5 g-font-weight-300 g-font-size-25 g-line-height-1">7348</div>
+                    <div class="js-counter g-color-gray-dark-v5 g-font-weight-300 g-font-size-25 g-line-height-1">Pedir info a la BBDD</div>
                     <div class="d-inline-block g-width-10 g-height-2 g-bg-gray-dark-v5 mb-1"></div>
                     <h4 class="g-color-gray-dark-v4 g-font-size-12 text-uppercase">Clientes satisfechos</h4>
                   </div>
@@ -133,7 +113,7 @@
               <div class="text-center">
                 <h2 class="h4 g-font-weight-400 mb-4">Registrate y gana una entrada a las finales de playoff de la NBA
                   <span class="g-color-primary">En el Garden</span> NYC</h2>
-                <img class="img-fluid" src="assets/img/garden.jpg" alt="Image Description">
+                <img class="img-fluid" src="assets/img/madison.jpg" alt="Image Description">
               </div>
             </div>
           </div>

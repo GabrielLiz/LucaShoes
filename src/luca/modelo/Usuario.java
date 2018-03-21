@@ -4,12 +4,8 @@ public class Usuario {
 	public String usuario;
 	public String nombre;
 	public String apellido;
-	public String getApellido() {
-		return apellido;
-	}
-	public void setApellido(String apellido) {
-		this.apellido = apellido;
-	}
+	public String genero;
+
 	public String password;
 	public String email;
 	public char sex;
@@ -19,19 +15,20 @@ public class Usuario {
 	}
 	public Usuario(Usuario user){
 		this.usuario = user.usuario;
-		this.nombre = user.nombre;
-		this.password = user.password;
-		this.email = user.email;
-		this.sex =  user.sex;
-	}
-	public Usuario(String usuario,String nombre,String password,String email,char sex){
-		this.usuario = usuario;
-		this.nombre = nombre;
-		this.password = password;
-		this.email = email;
-		this.sex =  sex;		
 	}
 	
+	public String getGenero() {
+		return genero;
+	}
+	public void setGenero(String genero) {
+		this.genero = genero;
+	}
+	public String getApellido() {
+		return apellido;
+	}
+	public void setApellido(String apellido) {
+		this.apellido = apellido;
+	}
 	public String getUsuario() {
 		return usuario;
 	}
