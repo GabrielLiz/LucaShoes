@@ -1,5 +1,6 @@
 <%@page contentType="text/html" pageEncoding="UTF-8"%>
 <%@taglib prefix="t" tagdir="/WEB-INF/tags" %>
+<%@ taglib prefix="c" uri="http://java.sun.com/jstl/core" %>
 
 <t:plantilla>
 	<jsp:attribute name="head">
@@ -24,7 +25,8 @@
               <form class="g-py-15" action="registro" method="POST">
                 <div class="row">
                   <div class="col g-mb-20">
-                    <input class="form-control g-color-black g-bg-white g-bg-white--focus g-brd-gray-light-v3 rounded g-py-15 g-px-15" type="text" name="nombre" placeholder="Nombre">
+                    <input class="form-control g-color-black g-bg-white g-bg-white--focus g-brd-gray-light-v3 rounded g-py-15 g-px-15" type="text" name="nombre" 
+                    placeholder="Nombre"> 
                   </div>
 
                   <div class="col g-mb-20">

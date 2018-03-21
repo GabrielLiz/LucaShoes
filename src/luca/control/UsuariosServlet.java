@@ -8,7 +8,6 @@ import javax.servlet.http.HttpServlet;
 import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
 
-import luca.datos.AltaUsuario;
 import luca.datos.GestionUsuarios;
 import luca.modelo.Usuario;
 
@@ -53,25 +52,21 @@ public class UsuariosServlet extends HttpServlet {
 	protected void processRequest(HttpServletRequest request, HttpServletResponse response)
 			throws ServletException, IOException {
 		Usuario user = new Usuario();
-		System.out.println(request.getParameter(GENERO));
 
 		user.setUsuario(request.getParameter(USUARIO));
 		user.setNombre(request.getParameter(NOMBRE));
 		user.setApellido(request.getParameter(APELLIDO));
 		user.setEmail(request.getParameter(EMAIL));
 		user.setEmail(request.getParameter(PASSWORD));
-		GestionUsuarios altas= new GestionUsuarios();
 		user.setPassword(request.getParameter(PASSWORD));
 		user.setGenero(request.getParameter(GENERO));
-		AltaUsuario alta= new AltaUsuario();
-		
-		if(alta.register(user)) {
-		response.sendRedirect("/LucaShoes/index.jsp");
-		}else {
-			response.sendRedirect("/LucaShoes/registro.jsp");
+		GestionUsuarios alta = new GestionUsuarios();
 
+		if (alta.register(user)) {
+			response.sendRedirect("/LucaShoes/index.jsp");
+		} else {
+			response.sendRedirect("/LucaShoes/registro.jsp");
 		}
 	}
-
 
 }
