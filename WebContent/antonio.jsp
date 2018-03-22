@@ -124,7 +124,7 @@
           				</h2>
         			</div>
         			<div class="text-center g-mb-50">
-          				<h2 class="h4"><a href="ficha.jsp">Ficha completa</a>
+          				<h2 class="h4"><a href="infoProducto?id=${producto.id}">Ficha completa</a>
           				</h2>
         			</div>
                   </div>

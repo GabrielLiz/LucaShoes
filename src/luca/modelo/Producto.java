@@ -6,7 +6,14 @@ public class Producto {
 	public String detalleMini;
 	public String detalleMax;
 	public String img;
+	public int id;
 	
+	public int getId() {
+		return id;
+	}
+	public void setId(int id) {
+		this.id = id;
+	}
 	public Producto(){
 		
 	}

@@ -6,27 +6,19 @@ import java.sql.ResultSet;
 import java.sql.SQLException;
 import java.sql.Statement;
 import java.util.ArrayList;
-import java.util.List;
 
 import luca.modelo.Producto;
 
-public class GestionProductos implements IDatosProductos {
-
-	public GestionProductos() {
-		super();
-
-	}
-
-	@Override
-	public ArrayList<Producto> mostrarProductos() {
+public class GestionFicha {
+	
+	public Producto mostrarFicha(String id) {
 
 		Connection con = null;
 		Statement st = null;
 		ResultSet rs = null;
 
-		ArrayList<Producto> p = new ArrayList();
+		Producto p1 = new Producto();
 
-		System.out.println("--- en metodo mostrar productos");
 		try {
 
 			String driverClassName = "com.mysql.jdbc.Driver";
@@ -37,27 +29,26 @@ public class GestionProductos implements IDatosProductos {
 			con = DriverManager.getConnection(driverUrl, user, password);
 
 			st = con.createStatement();
-			String query = "SELECT * FROM proyecto.productos;";
-			rs = st.executeQuery(query);
+			String query = "SELECT * FROM productos where id="+id+";";
+			rs = st.executeQuery(query);			
+			
+			Producto product = new Producto();
 
-			while (rs.next()) {
-				Producto product = new Producto();
+
+			while(rs.next()){
 
 				product.setNombre(rs.getString(2));
 				product.setPrecio(rs.getString(3));
 				product.setDetalleMax(rs.getString(4));
 				product.setDetalleMini(rs.getString(5));
 				product.setImg(rs.getString(6));
-				product.setId(rs.getInt(1));
-				
-
-
-				p.add(product);
 			}
+
+
 			System.out.println(query);
 			con.close();
 
-			return p;
+			return product;
 
 		} catch (SQLException e) {
 			System.out.println(e.getMessage());
@@ -68,19 +59,9 @@ public class GestionProductos implements IDatosProductos {
 
 		}
 
-		return null;
+		return new Producto();
 
-	}
-
-	@Override
-	public boolean alta(Producto product) {
-		// TODO Auto-generated method stub
-		return false;
-	}
-
-	@Override
-	public boolean baja(Producto product) {
-		// TODO Auto-generated method stub
-		return false;
 	}
 }
+
+

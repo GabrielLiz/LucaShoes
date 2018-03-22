@@ -78,17 +78,59 @@
                     </nav>
                 </div>
 
-                <!-- End Header -->
-            <div class="shortcode-html">
-    <!-- Box Shadow -->
-    <c:forEach var="producto" items="${productoList}">
-    <div class="u-shadow-v1-5 g-mb-30"> <img
-					class="img-fluid w-100"
-					src="../../assets/img-temp/400x270/img7.jpg"
-					alt="Image Description"> </div>
-					</c:forEach>
-    <!-- End Box Shadow -->
-</div>
+      
+
+   <section class="g-py-50">
+        <div class="container">
+          <div class="text-center g-mb-50">
+            <h2 class="h4">Ficha
+            </h2>
+          </div>
+
+          <div class="row">
+            <div class="col-lg">
+              <div id="shortcode3">
+                <div class="shortcode-html">
+                  <!-- Box Shadow -->
+                  <div
+									class="u-shadow-v1-5 g-line-height-2 g-pa-40 g-mb-30"
+									role="alert">
+                    <h3 class="h2 g-font-weight-300 g-mb-20">${producto.nombre}</h3>
+                    <p class="mb-0">${producto.detalleMax}
+                    </p>
+                  </div>
+                  <a href="#!"
+									class="btn btn-md u-btn-skew u-btn-primary g-mr-10 g-mb-15">
+  <span class="u-btn-skew__inner">Comprar: ${producto.precio}€</span>
+</a>
+                  
+                  <!-- End Box Shadow -->
+                </div>
+              </div>
+
+
+
+            </div>
+
+            <div class="col-lg">
+              <div id="shortcode4">
+                <div class="shortcode-html">
+                  <!-- Box Shadow -->
+                  <div class="u-shadow-v1-5 g-mb-30">
+                    <img class="img-fluid w-100" src="${producto.img}"
+										alt="Image Description">
+                  </div>
+                  <!-- End Box Shadow -->
+                </div>
+              </div>
+
+
+
+
+            </div>
+          </div>
+        </div>
+      </section>
 
 
             </jsp:body>
