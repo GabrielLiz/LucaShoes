@@ -80,7 +80,6 @@ public class GestionUsuarios implements IDatos{
 			String password = "1234";
 			Class.forName(driverClassName);
 			con = DriverManager.getConnection(driverUrl, user, password);
-
 			st = con.createStatement();
 			System.out.println("HOLAAA");
 			String query = "DELETE FROM proyecto.usuario WHERE usuario='"+us.getUsuario()+" ';";
