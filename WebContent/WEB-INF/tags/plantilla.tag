@@ -30,7 +30,10 @@
     <link rel="stylesheet" href="assets/vendor/hamburgers/hamburgers.min.css">
     <link rel="stylesheet" href="assets/vendor/slick-carousel/slick/slick.css">
     <link rel="stylesheet" href="assets/vendor/fancybox/jquery.fancybox.css">
-    <link rel="stylesheet" href="assets/vendor/chosen/chosen.css">
+    <link rel="stylesheet" href="assets/vendor/chosen/chosen.css">    
+    <link rel="stylesheet" href="assets/vendor/fancybox/jquery.fancybox.min.css">  
+         <link rel="stylesheet" href="assets/vendor/jquery-ui/themes/base/jquery-ui.min.css">
+      <link rel="stylesheet" href="assets/vendor/slick-carousel/slick/slick.css">
     
 
     <!-- CSS Unify -->
@@ -131,6 +134,9 @@
     
     <div id="body">
       <jsp:doBody/>
+      
+      
+      
         <!-- JS Global Compulsory -->
     <script src="assets/vendor/jquery/jquery.min.js"></script>
     <script src="assets/vendor/jquery-migrate/jquery-migrate.min.js"></script>
@@ -147,12 +153,24 @@
     <script src="assets/vendor/slick-carousel/slick/slick.js"></script>
     <script src="assets/vendor/fancybox/jquery.fancybox.min.js"></script>
     <script src="assets/vendor/chosen/chosen.jquery.js"></script>
+    
+   
+                  
 
     <!-- JS Unify -->
     <script src="assets/js/hs.core.js"></script>
 
     <script src="assets/js/components/hs.header.js"></script>
     <script src="assets/js/helpers/hs.hamburgers.js"></script>
+    
+      <!-- JS Unify -->
+  <script src="assets/js/components/hs.header-side.js"></script>
+  <script src="assets/js/components/hs.carousel.js"></script>
+  <script src="assets/js/components/hs.popup.js"></script>
+  <script src="assets/js/components/hs.autocomplete-local-search.js"></script>
+  <script src="assets/style-switcher/vendor/cookiejs/jquery.cookie.js"></script>
+  <script src="assets/js/helpers/hs.shortcode-filter.js"></script>
+  <script src="assets/js/components/hs.go-to.js"></script>
 
     <script src="assets/js/components/hs.dropdown.js"></script>
     <script src="assets/js/components/hs.popup.js"></script>
@@ -162,7 +180,8 @@
 
     <!-- JS Custom -->
     <script src="assets/js/custom.js"></script>
-     <script>
+     
+    <script>
         $(document).on('ready', function() {
             // initialization of go to
             $.HSCore.components.HSGoTo.init('.js-go-to');
@@ -197,7 +216,69 @@
         });
 
     </script>
-    
+     <script>
+    $(document).on('ready', function () {
+      $.HSCore.helpers.HSModalMarkup.init('.js-modal-markup');
+  
+      $.HSCore.components.HSMarkupCopy.init('.js-copy');
+    });
+  </script>
+
+
+  <!-- JS Custom -->
+  <script src="../../assets/js/custom.js"></script>
+
+  <!-- JS Plugins Init. -->
+  <script>
+    $(document).on('ready', function () {
+      // initialization of go to
+      $.HSCore.components.HSGoTo.init('.js-go-to');
+
+      // initialization of carousel
+      $.HSCore.components.HSCarousel.init('.js-carousel');
+
+      // initialization of masonry
+      $('.masonry-grid').imagesLoaded().then(function () {
+        $('.masonry-grid').masonry({
+          columnWidth: '.masonry-grid-sizer',
+          itemSelector: '.masonry-grid-item',
+          percentPosition: true
+        });
+      });
+
+      // initialization of popups
+      $.HSCore.components.HSPopup.init('.js-fancybox');
+
+      // initialization of popups with media
+      $.HSCore.components.HSPopup.init('.js-fancybox-media', {
+        helpers: {
+          media: {},
+          overlay: {
+            css: {
+              'background': 'rgba(255, 255, 255, .8)'
+            }
+          }
+        }
+      });
+    });
+
+    $(window).on('load', function () {
+      // initialization of header
+      $.HSCore.components.HSHeader.init($('#js-header'));
+      $.HSCore.helpers.HSHamburgers.init('.hamburger');
+      $.HSCore.components.HSHeaderSide.init($('#sideNav'));
+
+      // initialization of autocomplet
+      $.HSCore.components.HSLocalSearchAutocomplete.init('#u-sidebar-navigation__search-autocomplete');
+
+      // initialization of HSMegaMenu component
+      $('.js-mega-menu').HSMegaMenu({
+        event: 'hover',
+        pageContainer: $('.container'),
+        breakpoint: 991
+      });
+    });
+  </script>
     </div>
     
     <div id="pagefooter">
