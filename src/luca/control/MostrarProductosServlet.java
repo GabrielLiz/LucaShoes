@@ -26,10 +26,7 @@ public class MostrarProductosServlet extends HttpServlet {
 		request.setAttribute("productoList", productList);
 		RequestDispatcher rd = getServletContext().getRequestDispatcher("/antonio.jsp");
 		rd.forward(request, response);
-		for (Producto producto : productList) {
-			System.out.println(producto.getNombre());
-		}
-
+		
 	}
 
 	@Override
