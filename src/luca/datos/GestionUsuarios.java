@@ -21,7 +21,7 @@ public class GestionUsuarios implements IDatos {
 		Connection con = null;
 		Statement st = null;
 		ResultSet rs = null;
-		System.out.println("--- en metodo addUsuarios");
+		System.out.println("--- en metodo register");
 		try {
 
 			String driverClassName = "com.mysql.jdbc.Driver";
@@ -57,7 +57,7 @@ public class GestionUsuarios implements IDatos {
 		Connection con = null;
 		Statement st = null;
 		ResultSet rs = null;
-		System.out.println("--- en metodo addUsuarios");
+		System.out.println("--- en metodo bajas");
 		try {
 
 			String driverClassName = "com.mysql.jdbc.Driver";

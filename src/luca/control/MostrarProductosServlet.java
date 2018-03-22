@@ -21,9 +21,8 @@ public class MostrarProductosServlet extends HttpServlet {
 
 		GestionProductos p = new GestionProductos();
 
-		ArrayList<Producto> productList = new ArrayList<Producto>();
+		ArrayList<Producto> productList =p.mostrarProductos();
 
-		productList = p.mostrarProductos();
 
 		for (Producto product : productList) {
 			System.out.println(product.getNombre());

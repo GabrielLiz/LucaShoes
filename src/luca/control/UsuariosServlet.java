@@ -1,6 +1,7 @@
 package luca.control;
 
 import java.io.IOException;
+import java.util.ArrayList;
 
 import javax.servlet.ServletException;
 import javax.servlet.annotation.WebServlet;
@@ -10,6 +11,7 @@ import javax.servlet.http.HttpServletResponse;
 
 import luca.datos.GestionProductos;
 import luca.datos.GestionUsuarios;
+import luca.modelo.Producto;
 import luca.modelo.Usuario;
 
 /**
@@ -52,6 +54,21 @@ public class UsuariosServlet extends HttpServlet {
 
 	protected void processRequest(HttpServletRequest request, HttpServletResponse response)
 			throws ServletException, IOException {
+		
+		/**************** prueba *************************/
+		GestionProductos p = new GestionProductos();
+
+		ArrayList<Producto> productList = new ArrayList<Producto>();
+
+		productList = p.mostrarProductos();
+
+		for (Producto product : productList) {
+			System.out.println(product.getNombre());
+			System.out.println(product.getPrecio());
+			System.out.println(product.getDetalleMini());
+
+		} 
+		/*************************************************
 		Usuario user = new Usuario();
 
 		user.setUsuario(request.getParameter(USUARIO));
@@ -69,7 +86,7 @@ public class UsuariosServlet extends HttpServlet {
 			response.sendRedirect("/LucaShoes/registro.jsp");
 
 		}
-		
+	*/	
 		
 	}
 

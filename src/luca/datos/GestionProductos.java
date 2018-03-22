@@ -23,7 +23,6 @@ public class GestionProductos implements IDatosProductos {
 		Connection con = null;
 		Statement st = null;
 		ResultSet rs = null;
-		Producto product = new Producto();
 
 		ArrayList<Producto> p = new ArrayList();
 
@@ -42,13 +41,15 @@ public class GestionProductos implements IDatosProductos {
 			rs = st.executeQuery(query);
 
 			while (rs.next()) {
+				Producto product = new Producto();
+
 				product.setNombre(rs.getString(2));
 				product.setPrecio(rs.getString(3));
 				product.setDetalleMax(rs.getString(4));
 				product.setDetalleMini(rs.getString(5));
 				product.setImg(rs.getString(6));
 				
-				System.out.println(rs.getString(2));
+
 
 				p.add(product);
 			}
