@@ -1,19 +1,14 @@
-<%@page contentType="text/html" pageEncoding="UTF-8"%>
-<%@taglib prefix="t" tagdir="/WEB-INF/tags" %>
-<%@ taglib prefix="c" uri="http://java.sun.com/jstl/core" %>
+<%@ page language="java" contentType="text/html; charset=ISO-8859-1"
+	pageEncoding="ISO-8859-1"%>
+<%@ taglib prefix="c" uri="http://java.sun.com/jsp/jstl/core"%>
+<!DOCTYPE HTML>
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=ISO-8859-1">
+</head>
 
-<t:plantilla>
-	<jsp:attribute name="head">
-	   <title>Lucashoes | Registro</title>
-	</jsp:attribute>
-	
-    <jsp:attribute name="header">
-    
-    </jsp:attribute>	
-    <jsp:attribute name="footer">
-    </jsp:attribute>
-    <jsp:body>
-     <section class="container g-pt-100 g-pb-20">
+<body>
+     <section id="registro" class="container g-pt-100 g-pb-20">
         <div class="row">
           <div class="col-lg-5 order-lg-2 g-mb-80">
             <div class="g-brd-around g-brd-gray-light-v3 g-bg-white rounded g-px-30 g-py-50 mb-4">
@@ -25,8 +20,7 @@
               <form class="g-py-15" action="registro" method="POST">
                 <div class="row">
                   <div class="col g-mb-20">
-                    <input class="form-control g-color-black g-bg-white g-bg-white--focus g-brd-gray-light-v3 rounded g-py-15 g-px-15" type="text" name="nombre" 
-                    placeholder="Nombre"> 
+                    <input class="form-control g-color-black g-bg-white g-bg-white--focus g-brd-gray-light-v3 rounded g-py-15 g-px-15" type="text" name="nombre" placeholder="Nombre">
                   </div>
 
                   <div class="col g-mb-20">
@@ -64,7 +58,7 @@
                     <span class="d-block u-check-icon-checkbox-v6 g-absolute-centered--y g-left-0">
                       <i class="fa" data-check-icon="&#xf00c"></i>
                     </span>
-                    Acepto los <a href="https://www.forocoches.com/index.php?p=normas">&nbsp;tÃ©rminos y condiciones</a>
+                    Acepto los <a href="https://www.forocoches.com/index.php?p=normas">&nbsp;términos y condiciones</a>
                   </label>
                 </div>
 
@@ -75,15 +69,15 @@
             </div>
 
             <div class="text-center">
-              <p class="g-color-gray-dark-v5 mb-0">Â¿Ya tienes cuenta?
-                <a class="g-font-weight-600" href="page-login-1.html">IdentifÃ­cate</a></p>
+              <p class="g-color-gray-dark-v5 mb-0">¿Ya tienes cuenta?
+                <a class="g-font-weight-600" href="page-login-1.html">Identifícate</a></p>
             </div>
           </div>
 
           <div class="col-lg-7 order-lg-1 g-mb-80">
             <div class="g-pr-20--lg">
               <div class="mb-5">
-                <h2 class="h1 g-font-weight-400 mb-3">Registro LucaShoes</h2>
+                <h2 class="h1 g-font-weight-400 mb-3">Registrate y Gana</h2>
                 <p class="g-color-gray-dark-v4">
 					El registro en la web es fundamental para poder realizar compras</p>
               </div>
@@ -121,6 +115,5 @@
           </div>
         </div>
       </section>
-      
-    </jsp:body>
-</t:plantilla>
+	</body>
+</html>
