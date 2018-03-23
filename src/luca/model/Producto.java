@@ -4,6 +4,13 @@ public class Producto {
 	public String nombre;
 	public String precio;
 	public String marca;
+	public int Oferta;
+	public int getOferta() {
+		return Oferta;
+	}
+	public void setOferta(int oferta) {
+		Oferta = oferta;
+	}
 	public String getMarca() {
 		return marca;
 	}

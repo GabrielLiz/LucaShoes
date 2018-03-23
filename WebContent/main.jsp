@@ -1,5 +1,4 @@
-<%@ page language="java" contentType="text/html; charset=ISO-8859-1"
-	pageEncoding="ISO-8859-1"%>
+<%@ page language="java" contentType="text/html; charset=UTF-8" %>
 <!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
 <%@ taglib prefix="c" uri="http://java.sun.com/jsp/jstl/core"%>
 
@@ -79,8 +78,8 @@
 					class="h3 g-letter-spacing-7 g-font-size-12 g-font-weight-400 g-color-white g-mb-25">ZAPATILLAS
 					DE BALONCESTO</h3>
 				<h2
-					class="u-heading-v2__title g-line-height-1 g-letter-spacing-3 g-font-size-75 g-color-white mb-0">Somos
-					LucaShoes</h2>
+					class="u-heading-v2__title g-line-height-1 g-letter-spacing-3 g-font-size-75 g-color-green mb-0">Somos
+					LucaShoes </h2>
 			</div>
 		</div>
 	</div>
@@ -154,19 +153,19 @@
 				<!-- Products Block -->
 				<div class="row">
 					<c:forEach var="producto" items="${productoList}">
-
+						<c:if test="${producto.marca=='Under'}">
 						<div class="col-sm-6 col-lg-3 g-mb-30">
 							<!-- Figure -->
 							<figure class="u-block-hover u-shadow-v24">
 							<div class="g-pos-rel">
 								<!-- Figure Image -->
-								<img class="w-100" src="assets/img/under1.jpg"
+								<img class="w-100" src="${producto.img}"
 									alt="Image Description">
 								<!-- End Figure Image -->
 
 								<!-- Figure Add to Cart -->
 								<figcaption> <span
-									class="u-ribbon-v1 g-width-40 g-height-40 g-color-white g-bg-black g-font-weight-700 g-font-size-11 text-center text-uppercase g-rounded-50x g-top-15 g-left-15 g-px-2 g-py-10">New</span>
+									class="u-ribbon-v1 g-width-40 g-height-40 g-color-white g-bg-black g-font-weight-700 g-font-size-11 text-center text-uppercase g-rounded-50x g-top-15 g-left-15 g-px-2 g-py-10">€ ${producto.precio }</span>
 								<div class="g-z-index-2 g-pos-abs g-top-15 g-right-15">
 									<a
 										class="g-color-black g-color-primary--hover g-font-size-16 g-text-underline--none--hover rounded"
@@ -189,31 +188,26 @@
 							</div>
 
 							<!-- Figure Content -->
-							<div class="g-px-15 g-py-20">
-								<header class="d-flex justify-content-between">
-								<h4 class="h5">
-									<a
-										class="g-color-main g-color-primary--hover g-text-underline--none--hover"
-										href="#!">T-shirt</a>
-								</h4>
-								<div class="d-block text-right">
-									<span class="g-color-black g-font-size-16 g-line-height-1">$92.00</span>
-								</div>
-								</header>
-								<ul
-									class="list-unstyled g-color-gray-dark-v4 g-font-size-12 g-mb-5">
-									<li><a
-										class="g-color-gray-dark-v4 g-color-black--hover g-font-style-normal text-uppercase"
-										href="#!">Men</a></li>
-									<li>Suits - Blazers</li>
-								</ul>
-								<div class="js-rating g-color-primary g-font-size-11"
-									data-rating="3" data-spacing="2"
-									data-backward-icons-classes="fa fa-star g-opacity-0_5"></div>
-							</div>
+						<div class="g-px-15 g-py-20">
+							<header class="d-flex justify-content-between">
+							<h4 class="h5">
+								<a
+									class="g-color-main g-color-primary--hover g-text-underline--none--hover"
+									href="infoProducto?id=${producto.id}">${producto.nombre}</a>
+							</h4>
+							</header>
+							<ul
+								class="list-unstyled g-color-gray-dark-v4 g-font-size-12 g-mb-5">
+								<li><span class="g-color-black g-font-size-16 g-line-height-1"> ${producto.detalleMini }</span>
+							</ul>
+							<div class="js-rating g-color-primary g-font-size-11"
+								data-rating="3" data-spacing="2"
+								data-backward-icons-classes="fa fa-star g-opacity-0_5"></div>
+						</div>
 							<!-- End Figure Content --> </figure>
 							<!-- End Figure -->
 						</div>
+						</c:if>
 					</c:forEach>
 				</div>
 				<!-- End Products Block -->
@@ -241,18 +235,20 @@
 			<div class="shortcode-html">
 				<!-- Products Block -->
 				<div class="row">
+					<c:forEach var="producto" items="${productoList}">
+						<c:if test="${producto.marca=='Jordan'}">
 					<div class="col-sm-6 col-lg-3 g-mb-30">
 						<!-- Figure -->
 						<figure class="u-block-hover u-shadow-v24">
 						<div class="g-pos-rel">
 							<!-- Figure Image -->
-							<img class="w-100" src="assets/img/under1.jpg"
+							<img class="w-100" src="${producto.img}"
 								alt="Image Description">
 							<!-- End Figure Image -->
 
 							<!-- Figure Add to Cart -->
 							<figcaption> <span
-								class="u-ribbon-v1 g-width-40 g-height-40 g-color-white g-bg-black g-font-weight-700 g-font-size-11 text-center text-uppercase g-rounded-50x g-top-15 g-left-15 g-px-2 g-py-10">New</span>
+								class="u-ribbon-v1 g-width-40 g-height-40 g-color-white g-bg-black g-font-weight-700 g-font-size-11 text-center text-uppercase g-rounded-50x g-top-15 g-left-15 g-px-2 g-py-10">€ ${producto.precio }</span>
 							<div class="g-z-index-2 g-pos-abs g-top-15 g-right-15">
 								<a
 									class="g-color-black g-color-primary--hover g-font-size-16 g-text-underline--none--hover rounded"
@@ -280,18 +276,12 @@
 							<h4 class="h5">
 								<a
 									class="g-color-main g-color-primary--hover g-text-underline--none--hover"
-									href="#!">T-shirt</a>
+									href="#!">${producto.nombre}</a>
 							</h4>
-							<div class="d-block text-right">
-								<span class="g-color-black g-font-size-16 g-line-height-1">$92.00</span>
-							</div>
 							</header>
 							<ul
 								class="list-unstyled g-color-gray-dark-v4 g-font-size-12 g-mb-5">
-								<li><a
-									class="g-color-gray-dark-v4 g-color-black--hover g-font-style-normal text-uppercase"
-									href="#!">Men</a></li>
-								<li>Suits - Blazers</li>
+								<li><span class="g-color-black g-font-size-16 g-line-height-1"> ${producto.detalleMini }</span>
 							</ul>
 							<div class="js-rating g-color-primary g-font-size-11"
 								data-rating="3" data-spacing="2"
@@ -300,9 +290,10 @@
 						<!-- End Figure Content --> </figure>
 						<!-- End Figure -->
 					</div>
-
+					</c:if>
+					</c:forEach>
 				</div>
-				<!-- End Products Block -->
+			<!-- 	 End Products Block -->
 
 			</div>
 
@@ -312,18 +303,18 @@
 
 	</div>
 	</section> <!-- SEccion OFertas --> </section>
+		<c:forEach var="producto" items="${productoList}">
+						<c:if test="${producto.oferta=='1'}">
 	<section id="ofertas"
 		class="g-min-height-100vhg-flex-centered g-bg-secondary g-pos-rel">
-	<c:forEach var="producto" items="${productoList}">
-	<c:if test="${producto.oferta==1 }">  
-	<div class="container g-pt-100 g-pb-70">
+	   <div class="container g-pt-100 g-pb-70">
 		<div class="row justify-content-between align-items-center">
 			<div class="col-md-8 col-lg-6 order-md-2 g-mb-30">
 				<div class="g-pos-rel">
-					<img class="img-fluid w-100" src="assets/img/under1.jpg"
+					<img class="img-fluid w-100" src="${producto.img}"
 						alt="Image Description"> <span
 						class="u-icon-v1 g-width-85 g-height-85 g-brd-3 g-brd-white g-color-white g-bg-primary g-font-weight-300 g-font-size-22 rounded-circle g-pos-abs g-top-100 g-left-0 g-brd-around">
-						<i class="g-font-style-normal">$60<span class="g-font-size-16">.00</span></i>
+						<i class="g-font-style-normal">€ ${producto.precio}<span class="g-font-size-16">.00</span></i>
 					</span>
 				</div>
 			</div>
@@ -332,21 +323,19 @@
 				<div class="g-mb-30">
 					<h1 class="g-color-primary g-font-weight-400 g-font-size-40 mb-0"></h1>
 					<h2
-						class="g-color-dark g-font-weight-300 g-font-size-75 g-line-height-1 mb-4">Gloves</h2>
-					<p class="lead">We want to create a range of beautiful,
-						practical and modern outerwear that doesn't cost the earth.</p>
+						class="g-color-dark g-font-weight-300 g-font-size-75 g-line-height-1 mb-4">${producto.nombre}</h2>
+					<p class="lead">${producto.detalleMax}</p>
 				</div>
 
 				<a
 					class="btn u-btn-primary g-font-size-12 text-uppercase g-py-12 g-px-25 g-mb-70"
-					href="#!">Shop Now</a>
+					href="#!">comprar ahora</a>
 			</div>
 		</div>
 	</div>
 	<br>
-	</c:if>
-	</c:forEach>	
 	</section>
+	</c:if></c:forEach>
 
 	<!-- FIn de OFertas -->
 

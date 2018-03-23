@@ -4,21 +4,17 @@
 <html>
 <head>
 <meta http-equiv="Content-Type" content="text/html; charset=ISO-8859-1">
-<title>LucaShoes | Inicio</title>
+<title>LucaShoes | ficha</title>
 <%@include file="header.jsp"%>
 </head>
 <body>
-<jsp:include page="main.jsp">
-    <jsp:param name="year" value="2014"/>
-</jsp:include>
 
-<jsp:include page="registro.jsp">
-    <jsp:param name="year" value="2014"/>
-</jsp:include>
+
+
+
 <jsp:include page="footer.jsp">
     <jsp:param name="year" value="2014"/>
 </jsp:include>
 <%@include file="scripts.jsp"%>
-
-	</body>
+</body>
 </html>

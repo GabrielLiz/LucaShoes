@@ -9,9 +9,9 @@ public class ConexionDB {
     Connection connection = null;
     String BD = "tablas_de_prueba";
     String driverClassName = "com.mysql.jdbc.Driver";
-    String driverUrl = "jdbc:mysql:///" + BD;
-    String user = "root";
-    String password = "root";
+    String driverUrl = "jdbc:mysql://192.168.200.22/proyecto?useSSL=false";
+    String user = "proyecto";
+    String password = "1234";
 
     public ConexionDB() {
         try {

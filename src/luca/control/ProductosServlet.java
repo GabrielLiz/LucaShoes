@@ -10,6 +10,7 @@ import javax.servlet.http.HttpServlet;
 import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
 
+import luca.dao.productosDAO;
 import luca.model.Producto;
 
 /**
@@ -33,17 +34,15 @@ public class ProductosServlet extends HttpServlet {
 	
 	protected void processRequest(HttpServletRequest request, HttpServletResponse response)
 			throws ServletException, IOException {
-		ArrayList<Producto> productList =new ArrayList<>();
-		for(int i =0;i<4;i++) {
-			Producto pr= new Producto();
-			pr.setNombre("prueba");
-			productList.add(pr);
-
+		productosDAO pro = new productosDAO();
+		ArrayList<Producto> productList = pro.mostrarProductos();
+		
+		System.out.println(productList.size());
+		for (Producto producto : productList) {
+			System.out.println(producto.getImg());
 		}
 		
-		
 		request.setAttribute("productoList", productList);
-		
 		
 		
 		RequestDispatcher rd = getServletContext().getRequestDispatcher("/principal.jsp");
