@@ -1,10 +1,15 @@
 package luca.model;
 
-public class Producto {
+public class Zapatillas {
 	public String nombre;
 	public String precio;
 	public String marca;
 	public int Oferta;
+	public String detalleMini;
+	public String detalleMax;
+	public String img;
+	public int id;
+	
 	public int getOferta() {
 		return Oferta;
 	}
@@ -17,10 +22,7 @@ public class Producto {
 	public void setMarca(String marca) {
 		this.marca = marca;
 	}
-	public String detalleMini;
-	public String detalleMax;
-	public String img;
-	public int id;
+
 	
 	public int getId() {
 		return id;
@@ -28,12 +30,10 @@ public class Producto {
 	public void setId(int id) {
 		this.id = id;
 	}
-	public Producto(){
+	public Zapatillas(){
 		
 	}
-	public Producto(Producto product){
-		this.nombre=product.nombre;
-	}
+	
 	public String getNombre() {
 		return nombre;
 	}

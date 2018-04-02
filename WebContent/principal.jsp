@@ -8,15 +8,16 @@
 <%@include file="header.jsp"%>
 </head>
 <body>
+
 <jsp:include page="main.jsp">
-    <jsp:param name="year" value="2014"/>
+    <jsp:param name="year" value="2018"/>
 </jsp:include>
 
 <jsp:include page="registro.jsp">
-    <jsp:param name="year" value="2014"/>
+    <jsp:param name="year" value="2018"/>
 </jsp:include>
 <jsp:include page="footer.jsp">
-    <jsp:param name="year" value="2014"/>
+    <jsp:param name="year" value="2018"/>
 </jsp:include>
 <%@include file="scripts.jsp"%>
 

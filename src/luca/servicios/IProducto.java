@@ -1,11 +1,14 @@
 package luca.servicios;
 
 import java.util.ArrayList;
+import java.util.List;
+import java.util.Map;
 
-import luca.model.Producto;
+import luca.model.Zapatillas;
 
 public interface IProducto {
-	boolean alta(Producto product);
-	boolean baja(Producto product);
-	ArrayList<Producto> mostrarProductos();
+	Map<String,List<Zapatillas>> catalogoCompleto();
+	List<Zapatillas>zapatillasPorMarca(String marca);
+	ArrayList<String>MarcasEnCatalogo();
+
 }

@@ -1,7 +1,6 @@
 package luca.control;
 
 import java.io.IOException;
-import java.util.ArrayList;
 
 import javax.servlet.RequestDispatcher;
 import javax.servlet.ServletException;
@@ -10,13 +9,12 @@ import javax.servlet.http.HttpServlet;
 import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
 
-import luca.dao.productosDAO;
-import luca.model.Producto;
+import luca.servicios.ProductosService;
 
 /**
  * Servlet implementation class ProductosServlet
  */
-@WebServlet(name = "ProductosServlet", urlPatterns = { "/ProductosServlet" }, asyncSupported = false)
+@WebServlet(name = "ProductosServlet", urlPatterns = { "/ProductosServlet","/registro" }, asyncSupported = false)
 
 public class ProductosServlet extends HttpServlet {
 	private static final long serialVersionUID = 1L;
@@ -34,19 +32,21 @@ public class ProductosServlet extends HttpServlet {
 	
 	protected void processRequest(HttpServletRequest request, HttpServletResponse response)
 			throws ServletException, IOException {
-		productosDAO pro = new productosDAO();
-		ArrayList<Producto> productList = pro.mostrarProductos();
-		
-		System.out.println(productList.size());
-		for (Producto producto : productList) {
-			System.out.println(producto.getImg());
+		ProductosService service= new ProductosService();
+
+		if (request.getRequestURI().toString().equals("/LucaShoes/registro")) {
+			if(service.registro(request)) {
+				response.sendRedirect("/LucaShoes/#registro");
+				
+			}
+		}else {
+			request.setAttribute("productoList", service.catalogoCompleto());
+	        request.setAttribute("marcas", service.MarcasEnCatalogo());
+			RequestDispatcher rd = getServletContext().getRequestDispatcher("/principal.jsp");
+			rd.forward(request, response);
 		}
 		
-		request.setAttribute("productoList", productList);
-		
-		
-		RequestDispatcher rd = getServletContext().getRequestDispatcher("/principal.jsp");
-		rd.forward(request, response);
+
 		
 		
 	}
